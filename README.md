@@ -4,7 +4,7 @@ A web-based dashboard system that displays real-time Weather and Sports data usi
 
 ## 🌐 Live Demo
 
-🔗 [View Dashboard on GitHub Pages](https://YOUR_USERNAME.github.io/datainsight-dashboard/)
+🔗 [View Dashboard on GitHub Pages](https://074356.github.io/datainsight-dashboard/)
 
 ---
 
