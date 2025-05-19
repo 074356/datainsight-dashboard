@@ -1,62 +1,80 @@
 # 📊 DataInsight Dashboard
 
-A web-based dashboard system that displays real-time Weather and Sports data using public APIs, built with HTML, CSS, and JavaScript — deployed via GitHub Pages with CI/CD Git tracking.
+Welcome to the **DataInsight Dashboard**, a web-based system designed to display real-time data using public APIs. This project is part of an academic assignment focused on web development with API integration and Continuous Deployment via GitHub Pages.
 
-## 🌐 Live Demo
+---
 
-🔗 [View Dashboard on GitHub Pages](https://074356.github.io/datainsight-dashboard/)
+## 🌐 Live Website
+
+👉 [Click Here to View Live Dashboard](https://074356.github.io/datainsight-dashboard/)
+
+*(Replace `yourusername` with your actual GitHub username)*
+
+---
+
+## 🧑‍💻 About Me
+
+- **Name:** DHARSHANAA REDDY
+- **Student ID:** 074356
+- **Course:** INTERNET BASED 
+- **Instructor:** DR SUHAILAN
 
 ---
 
 ## 📁 Project Structure
 
-- `index.html` – Home page with navigation to dashboards
-- `weather.html` + `weather.js` – Weather dashboard using OpenWeatherMap API
-- `sports.html` + `sports.js` – Sports dashboard (Live Scores or Fixture data via API)
-- `crud.html` – (Placeholder) CRUD feature page
-- `report.html` – Final report page
-- `/css/style.css` – Styling and theme for all pages
-- `/js/` – JavaScript files for API and interactivity
+| Page              | Description                           |
+|-------------------|---------------------------------------|
+| `index.html`      | Main home page with dashboard links   |
+| `weather.html`    | Weather Dashboard using OpenWeatherMap API |
+| `sports.html`     | Sports Dashboard using TheSportsDB API |
+| `crud.html`       | Placeholder CRUD page (optional)      |
+| `report.html`     | Final report and summary              |
+| `css/style.css`   | Custom styles                         |
+| `js/*.js`         | JavaScript files for APIs             |
 
 ---
 
-## 🔧 Technologies Used
+## ⚙️ Technologies Used
 
-- HTML5, CSS3, JavaScript
-- Public APIs (OpenWeatherMap, TheSportsDB)
-- Chart.js for charts (optional)
-- Responsive design using Flexbox
-- Git & GitHub for version control
-- GitHub Pages for CI/CD deployment
+- HTML5 / CSS3 / JavaScript
+- Fetch API for Public API Integration
+- Responsive Web Design (Flexbox)
+- Chart.js (optional for visualization)
+- GitHub for Version Control
+- GitHub Pages for CI/CD Deployment
 
 ---
 
 ## 🌩️ APIs Used
 
-### Weather API
-- **OpenWeatherMap API**
-- Endpoint: `https://api.openweathermap.org/data/2.5/weather`
+### 🌦️ Weather Dashboard
+- **API:** OpenWeatherMap
+- **Endpoint:** `https://api.openweathermap.org/data/2.5/weather`
 
-### Sports API
-- **TheSportsDB API**
-- Endpoint: `https://www.thesportsdb.com/api/v1/json/1/eventspastleague.php?id=4328`
+### ⚽ Sports Dashboard
+- **API:** TheSportsDB
+- **Endpoint:** `https://www.thesportsdb.com/api/v1/json/1/eventspastleague.php?id=4328`
 
 ---
 
-## ✅ Features
+## 🧠 Key Features
 
-- 🔁 Real-time data updates
-- 📊 Interactive dashboards (Weather & Sports)
-- 🎯 Responsive layout for mobile and desktop
-- 🧭 Navigation to CRUD and Report pages
-- 🎨 Clean UI with colorful buttons and cards
-- ✅ CI/CD with GitHub Pages deployment
+- 🌍 Real-time weather and sports data
+- 🎯 Simple, responsive layout
+- 📱 Mobile & desktop friendly
+- 🎨 Colorful buttons and design
+- 🔄 Navigation across all pages
+- 📝 CRUD & Report placeholder pages
+- 🚀 GitHub Pages live deployment
 
 ---
 
 ## 📸 Screenshots
 
-*(You can add screenshots here if available — just upload images and link like below)*
+*(You can upload screenshots of your dashboard and add them here)*
 
 ```md
-![Dashboard Screenshot](images/dashboard-preview.png)
+![Home Page](images/homepage.png)
+![Weather Dashboard](images/weather.png)
+![Sports Dashboard](images/sports.png)
