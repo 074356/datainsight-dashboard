@@ -1,0 +1,69 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f8fa;
+  color: #333;
+}
+
+header, footer {
+  background: #007acc;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+main {
+  padding: 2em;
+}
+
+h1, h2 {
+  color: #007acc;
+}
+
+input, button {
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  margin: 5px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-weather { background-color: #2a9d8f; }
+.btn-sports { background-color: #e76f51; }
+.btn-primary { background-color: #007acc; }
+.btn-crud { background-color: #6a4c93; }
+.btn-report { background-color: #264653; }
+.btn-add { background-color: #43aa8b; }
+.btn-delete { background-color: #d62828; }
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.nav-menu li {
+  margin: 0 10px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  background: #ffffff;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}

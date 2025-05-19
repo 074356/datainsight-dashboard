@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Sports Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Sports Dashboard</h1>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="btn btn-primary">Home</a></li>
+        <li><a href="crud-sports.html" class="btn btn-crud">CRUD Page</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Search Football Team</h2>
+    <input type="text" id="teamInput" placeholder="Enter team name..." />
+    <button class="btn btn-sports" onclick="getTeam()">Search</button>
+
+    <div id="teamResult"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 DataInsight Dashboards</p>
+  </footer>
+
+  <script src="sports.js"></script>
+</body>
+</html>

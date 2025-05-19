@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Sports CRUD Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Sports CRUD Page</h1>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="btn btn-primary">Home</a></li>
+        <li><a href="sports.html" class="btn btn-sports">Back to Sports Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Manage Sports Teams</h2>
+
+    <form id="sportsForm">
+      <input type="text" id="teamName" placeholder="Enter team name" required />
+      <input type="text" id="league" placeholder="Enter league name" required />
+      <button type="submit" class="btn btn-add">Add Team</button>
+    </form>
+
+    <ul id="teamList"></ul>
+  </main>
+
+  <script>
+    const sportsForm = document.getElementById('sportsForm');
+    const teamList = document.getElementById('teamList');
+
+    sportsForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('teamName').value;
+      const league = document.getElementById('league').value;
+
+      const li = document.createElement('li');
+      li.innerHTML = `<strong>${name}</strong> - ${league}
+        <button onclick="this.parentElement.remove()" class="btn btn-delete">Delete</button>`;
+      teamList.appendChild(li);
+
+      sportsForm.reset();
+    });
+  </script>
+
+  <footer>
+    <p>&copy; 2025 DataInsight Dashboards</p>
+  </footer>
+</body>
+</html>

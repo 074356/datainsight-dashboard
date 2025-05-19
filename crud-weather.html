@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Weather CRUD Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Weather CRUD Page</h1>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="btn btn-primary">Home</a></li>
+        <li><a href="weather.html" class="btn btn-weather">Back to Weather Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Manage Weather Reports</h2>
+
+    <form id="weatherForm">
+      <input type="text" id="location" placeholder="Enter location" required />
+      <input type="text" id="report" placeholder="Enter weather report" required />
+      <button type="submit" class="btn btn-add">Add Report</button>
+    </form>
+
+    <ul id="weatherList"></ul>
+  </main>
+
+  <script>
+    const form = document.getElementById('weatherForm');
+    const list = document.getElementById('weatherList');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const location = document.getElementById('location').value;
+      const report = document.getElementById('report').value;
+
+      const li = document.createElement('li');
+      li.innerHTML = `<strong>${location}</strong>: ${report} 
+        <button onclick="this.parentElement.remove()" class="btn btn-delete">Delete</button>`;
+      list.appendChild(li);
+
+      form.reset();
+    });
+  </script>
+
+  <footer>
+    <p>&copy; 2025 DataInsight Dashboards</p>
+  </footer>
+</body>
+</html>
